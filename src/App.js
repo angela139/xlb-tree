@@ -11,14 +11,19 @@ function App() {
     lineColor={'green'}
     lineBorderRadius={'10px'}
     label={<div>
-        <img src={baoPic} width={80}/>
+        <img src={baoPic} width={80} alt="Bao"/>
         <h2>Eric</h2>
       </div>}>
         <TreeNode label={<div>Tristin</div>}>
           <TreeNode label={<div>Sergio</div>}>
             <TreeNode label={<div>Alyssa</div>}>
-              <TreeNode label={<div>Hugh</div>} />
-              <TreeNode label={<div>Ethan</div>} />
+              <TreeNode label={<div>Hugh</div>}>
+                <TreeNode label={<div>Owen</div>} />
+                <TreeNode label={<div>Rebecca</div>} />
+              </TreeNode>
+              <TreeNode label={<div>Ethan</div>}>
+                <TreeNode label={<div>Jeffrey</div>} />
+              </TreeNode>
             </TreeNode>
             <TreeNode label={<div>Miguel</div>}>
               <TreeNode label={<div>Jae Won</div>} />
@@ -28,6 +33,8 @@ function App() {
             <TreeNode label={<div>Nolan</div>}>
               <TreeNode label={<div>Catherine</div>} />
               <TreeNode label={<div>Brandon</div>} />
+              <TreeNode label={<div>Prisca</div>} />
+              <TreeNode label={<div>Roxanna</div>} />
             </TreeNode>
             <TreeNode label={<div>Jason</div>}>
               <TreeNode label={<div>Brighten</div>} />
@@ -41,23 +48,39 @@ function App() {
                 <TreeNode label={<div>Stephanie</div>} />
               </TreeNode>
               <TreeNode label={<div>Justin</div>}>
-                <TreeNode label={<div>Magnus</div>} />
+                <TreeNode label={<div>Magnus</div>}>
+                  <TreeNode label={<div>Brandon</div>} />
+                </TreeNode>
                 <TreeNode label={<div>Nathan</div>} />
               </TreeNode>
+              <TreeNode label={<div>Taylin</div>} />
+              <TreeNode label={<div>Ashley</div>} />
             </TreeNode>
             <TreeNode label={<div>Faith</div>}>
               <TreeNode label={<div>Grace</div>}>
-                <TreeNode label={<div>Lina</div>} />
-                <TreeNode label={<div>Brenton</div>} />
+                <TreeNode label={<div>Lina</div>}>
+                  <TreeNode label={<div>Gloria</div>} />
+                </TreeNode>
+                <TreeNode label={<div>Brenton</div>}>
+                  <TreeNode label={<div>Eric</div>} />
+                  <TreeNode label={<div>Iris</div>} />
+                </TreeNode>
               </TreeNode>
               <TreeNode label={<div>Connie</div>}>
-                <TreeNode label={<div>Angela x2</div>} />
+                <TreeNode label={<div>Angela Hu</div>}>
+                  <TreeNode label={<div>Khushi</div>} />
+                  <TreeNode label={<div>Serena</div>} />
+                </TreeNode>
+                <TreeNode label={<div>Angela Tsai</div>}>
+                  <TreeNode label={<div>Basil</div>} />
+                  <TreeNode label={<div>Lisa</div>} />
+                </TreeNode>
                 <TreeNode label={<div>Nicole</div>} />
               </TreeNode>
         </TreeNode>
           </TreeNode>
       </Tree>
-      <h1 style={{marginTop: "50px"}}>Reference Image</h1>
+      <h1 style={{marginTop: "50px"}}>Past Reference Image</h1>
       <img src={xlbPic} alt="XLB Reference" width={800}></img>
     </div>
   );
